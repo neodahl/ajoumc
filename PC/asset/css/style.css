@@ -607,6 +607,7 @@ body {
   margin-left: 38px;
   margin-right: 10px;
   background: url('../img/sp_gnb.png') -20px -20px no-repeat;
+  vertical-align: middle;
 }
 .gnb_bottom_banner .company_number,
 .search_bottom_banner .company_number {
