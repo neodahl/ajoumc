@@ -115,52 +115,58 @@ main {
 }
 h1 {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 
-main > ul {
+dl {
   margin-top: 20px;
   padding: 20px 15px;
   background-color: #ececec;
 }
 @media all and (min-width: 600px) {
-  main > ul {
+  dl {
     padding: 40px;
   }
 }
-main > ul li {
-  margin-bottom: 20px;
-}
-main > ul > li:before {
-  content: '▶';
-  margin-right: 4px;
-  vertical-align: top;
-}
-main > ul li a {
+
+dt {
+  margin-bottom: 0.5em;
   font-size: 20px;
   color: #000;
   font-weight: bold;
 }
-main > ul li a:hover {
-  text-decoration: underline;
-}
-main > ul li p {
-  color: #777;
-  padding-left: 26px;
-  margin: 0;
+dt::before {
+  content: '▶';
+  margin-right: 4px;
+  vertical-align: top;
 }
 
+dl dd {
+  line-height: 2;
+  padding-left: 1.5em;
+  margin-bottom: 2.5em;
+  color: #333;
+}
+dl dd a {
+  display: block;
+}
+dl dd a:hover {
+  text-decoration: underline;
+}
+
+
 /* depth2 */
-li ul {
+li > ul {
   padding: 15px;
 }
-li ul li {
+li > ul li {
   margin-bottom: 5px;
 }
-li ul li:before {
+li > ul li:before {
   content: '▷';
   margin-right: 4px;
 }
-li ul li a {
+li > ul li a {
   font-size: 16px;
 }
