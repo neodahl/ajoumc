@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 /*** Reset style ***/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
@@ -8,10 +8,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+
+	outline: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+body {
+	line-height: 1;
 }
 ol, ul, li {
 	list-style: none;
@@ -43,7 +48,6 @@ a {
 	color: inherit;
 }
 input {
-	margin: 0;
 	border: none;
 	box-sizing: border-box;
 	-webkit-appearance: none;
@@ -66,13 +70,7 @@ select {
   -moz-appearance: none;
 	appearance: none;
 }
-select::-ms-expand {
-	display: none;
-}
 button, input, select {
-	vertical-align: top;
-}
-img {
 	vertical-align: top;
 }
 iframe {
@@ -80,44 +78,5 @@ iframe {
 }
 
 
-/* Common Class */
-.a11y_hidden {
-	position: absolute !important;
-	width: 1px !important;
-	height: 1px !important;
-	margin: -1px !important;
-	padding: 0 !important;
-	border: 0 !important;
-	overflow: hidden !important;
-	clip: rect(0,0,0,0) !important;
-}
-caption.a11y_hidden {
-	position: static !important;
-}
-.clearfix::after {
-	content: '';
-	display: block;
-	clear: both;
-}
 
 
-/* Alignment Container */
-.align_left {
-	float: left;
-}
-.align_right {
-	float: right;
-}
-.align_center {
-	text-align: center;
-}
-
-
-/* slick slider reset */
-/* .slick-prev {
-  left: 0;
-  z-index: 1;
-}
-.slick-next {
-  right: 0;
-} */
